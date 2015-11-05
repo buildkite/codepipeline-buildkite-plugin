@@ -16,8 +16,8 @@ steps:
   - name: ":codepipeline: QA Release"
     plugins:
       buildkite/codepipeline:
-        s3-location: s3://qa-release-code-bucket/release.zip
         start: QA Release
+        upload-to-s3: s3://qa-release-code-bucket/code.zip
 ```
 
 ## Options
@@ -26,9 +26,9 @@ steps:
 
 The name of the pipeline to start a release.
 
-### `s3-location`
+### `upload-to-s3` (optional)
 
-The S3 location to zip and upload the code to. This is the same location your AWS CodePipeline source step should expect to find the code.
+The S3 location to zip and upload the code to before starting the CodePipeline release. This should be the same location your CodePipeline S3 "Source" step is configured with.
 
 ## Roadmap
 
