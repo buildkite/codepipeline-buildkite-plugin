@@ -13,7 +13,8 @@ The following pipeline will zip and upload the code to the given S3 location, an
 
 ```yml
 steps:
-  - plugins:
+  - name: ":codepipeline: QA Release"
+    plugins:
       buildkite/codepipeline:
         s3-location: s3://qa-release-code-bucket/release.zip
         start: QA Release
