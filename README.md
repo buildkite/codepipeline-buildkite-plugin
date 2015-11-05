@@ -5,7 +5,7 @@ A [Buildkite plugin](https://buildkite.com/plugins) to trigger [AWS CodePipeline
 ## Dependencies
 
 * The [aws cli](https://aws.amazon.com/cli/) tool (configured with the correct credentials)
-* Zip
+* `zip`
 
 ## Example
 
