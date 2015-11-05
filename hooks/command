@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -eu
+
+# TODO: Check 
+
+echo "~~~ :codepipeline: Triggering CodePipeline release"
+
+# TODO: Zip current checkout dir
+# TODO: Upload zip to s3
+# TODO: Call aws cli
