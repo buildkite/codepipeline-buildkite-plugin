@@ -15,9 +15,9 @@ The following pipeline will zip and upload the code to the given S3 location, an
 steps:
   - name: ":codepipeline: QA Release"
     plugins:
-      buildkite/codepipeline:
-        start: QA Release
-        upload-to-s3: s3://qa-release-code-bucket/code.zip
+      - buildkite/codepipeline:
+          start: QA Release
+          upload-to-s3: s3://qa-release-code-bucket/code.zip
 ```
 
 ## Options
